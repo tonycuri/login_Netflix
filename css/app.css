@@ -75,6 +75,10 @@ form .campo {
 
 form .campo label {
   position: absolute;
+  top: 1.1rem;
+  left: 1rem;
+  font-size: .9rem;
+  transition: font-size .2s ease, top .2s ease;
 }
 
 form .campo input {
@@ -88,4 +92,119 @@ form .campo input {
 form .campo input:focus {
   background-color: #454545;
   outline: none;
+}
+
+form .campo input:focus + label {
+  font-size: .6rem;
+  top: .5rem;
+}
+
+form .submit {
+  display: flex;
+  margin-top: 2rem;
+}
+
+form .submit input[type="submit"] {
+  background-color: #E50914;
+  color: #ffffff;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 1rem 0;
+}
+
+form .submit input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+form .acciones {
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem 0;
+  margin: .5rem 0 6rem 0;
+}
+
+form .acciones label, form .acciones a {
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.contenido-inferior {
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .contenido-inferior {
+    padding-bottom: 0;
+  }
+}
+
+.contenido-inferior a {
+  font-size: .8rem;
+}
+
+.contenido-inferior .nuevo-usuario {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.contenido-inferior .nuevo-usuario a {
+  color: #ffffff;
+  margin-left: .5rem;
+  font-size: 1rem;
+}
+
+.site-footer {
+  border-top: 1px solid #8c8c8c;
+  padding: 2rem 0 4rem 0;
+}
+
+@media (min-width: 768px) {
+  .site-footer {
+    border-top: unset;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 1rem 0 3rem 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-footer .contenedor {
+    max-width: 60%;
+  }
+}
+
+.site-footer .menu-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.site-footer .menu-footer a {
+  flex: 0 0 auto;
+  font-size: 0.8rem;
+  margin-right: 2rem;
+  padding: 0.5rem 0;
+}
+
+.site-footer .menu-footer a:last-of-type {
+  margin-right: 0;
+}
+
+.site-footer select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #454545;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  padding: 1rem 3rem;
+  background-color: #000000;
+  color: #8c8c8c;
+  margin-top: 2rem;
 }
