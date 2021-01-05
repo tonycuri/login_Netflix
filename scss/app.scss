@@ -45,6 +45,36 @@ a{
 .formulario-login{
     @include tablet{
         background-color: rgba(0,0,0,.85);
-        min-width: 450px;
+        max-width: 450px;
+        padding:2rem 4rem;
+        margin:1rem auto 4rem auto;
     }
 }
+form{
+    legend{
+        color:$blanco;
+        font-size: 2rem;
+        margin: 2rem 0;
+        font-weight: bold;
+    }
+    .campo{
+        display:flex;
+        position:relative;
+        margin-bottom: 0.8rem;
+        label{
+            position:absolute;
+        }
+        input{
+            flex:1;
+            padding: 1.3rem 1rem .7rem 1rem;
+            border:none;
+            background-color:$gris;
+            border-radius:$radius;
+            &:focus{
+                background-color: $gris3;
+                outline: none;
+            }
+        }
+    }
+}
+

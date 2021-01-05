@@ -54,6 +54,38 @@ a:hover {
 @media (min-width: 768px) {
   .formulario-login {
     background-color: rgba(0, 0, 0, 0.85);
-    min-width: 450px;
+    max-width: 450px;
+    padding: 2rem 4rem;
+    margin: 1rem auto 4rem auto;
   }
+}
+
+form legend {
+  color: #ffffff;
+  font-size: 2rem;
+  margin: 2rem 0;
+  font-weight: bold;
+}
+
+form .campo {
+  display: flex;
+  position: relative;
+  margin-bottom: 0.8rem;
+}
+
+form .campo label {
+  position: absolute;
+}
+
+form .campo input {
+  flex: 1;
+  padding: 1.3rem 1rem .7rem 1rem;
+  border: none;
+  background-color: #323232;
+  border-radius: 5px;
+}
+
+form .campo input:focus {
+  background-color: #454545;
+  outline: none;
 }
