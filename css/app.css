@@ -7,3 +7,46 @@ html {
 *:before {
   box-sizing: inherit;
 }
+
+body {
+  background-color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #8c8c8c;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: unset;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+  }
+}
+
+a {
+  color: #8c8c8c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.contenedor {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logotipo {
+  margin-top: .5rem;
+  max-width: 180px;
+  margin-left: 2%;
+}
+
+@media (min-width: 768px) {
+  .logotipo {
+    margin-left: 2%;
+    margin-top: .8rem;
+  }
+}
