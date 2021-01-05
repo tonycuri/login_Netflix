@@ -50,3 +50,10 @@ a:hover {
     margin-top: .8rem;
   }
 }
+
+@media (min-width: 768px) {
+  .formulario-login {
+    background-color: rgba(0, 0, 0, 0.85);
+    min-width: 450px;
+  }
+}

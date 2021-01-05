@@ -42,3 +42,9 @@ a{
         margin-top: .8rem;
     }
 }
+.formulario-login{
+    @include tablet{
+        background-color: rgba(0,0,0,.85);
+        min-width: 450px;
+    }
+}
